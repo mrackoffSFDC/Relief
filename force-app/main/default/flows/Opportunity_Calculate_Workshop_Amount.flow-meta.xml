@@ -2,47 +2,453 @@
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>58.0</apiVersion>
     <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <description>Set weeks 1-8 since all the workshops use those, and set weeks 9-13 to blank</description>
+        <name>Set_Base_values_Anxiety_depression</name>
+        <label>Set Base values - Anxiety/depression</label>
+        <locationX>1018</locationX>
+        <locationY>503</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_1__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <numberValue>0.0</numberValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_2__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varAmount9</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_3__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varAmount9</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_4__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varAmount9</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_5__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varAmount9</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_6__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varAmount9</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_7__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varAmount9</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_8__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varAmount9_1</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_9__c</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_10__c</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_11__c</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_12__c</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_13__c</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <connector>
+            <targetReference>Anxiety_depression_workshop_type</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Set weeks 1-8 since all the workshops use those, and set weeks 9-13 to blank</description>
+        <name>Set_base_values_bipolarity_sales_workshop</name>
+        <label>Set base values -bipolarity - sales workshop</label>
+        <locationX>314</locationX>
+        <locationY>503</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_1__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <numberValue>0.0</numberValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_2__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varAmount12</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_3__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varAmount12</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_4__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varAmount12</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_5__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varAmount12</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_6__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varAmount12</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_7__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varAmount12</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_8__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varAmount12</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_9__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varAmount12</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_10__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varAmount12</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_11__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varAmount12</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_12__c</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_13__c</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <connector>
+            <targetReference>Bipolarity_sales_workshop_type</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Set weeks 1-8 since all the workshops use those, and set weeks 9-13 to blank</description>
+        <name>Set_Base_values_non_bipolar</name>
+        <label>Set Base values - non bipolar</label>
+        <locationX>1722</locationX>
+        <locationY>503</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_1__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <numberValue>0.0</numberValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_2__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varAmount10</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_3__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varAmount10</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_4__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varAmount10</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_5__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varAmount10</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_6__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varAmount10</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_7__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varAmount10</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_8__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varAmount10</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_9__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varAmount10</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_10__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varAmount10</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_11__c</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_12__c</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_13__c</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <connector>
+            <targetReference>Non_bipolarity_sales_workshop_type</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Update week 1 and 8 for in person</description>
+        <name>Update_weeks_anxiety_depression_in_person</name>
+        <label>Update weeks anxiety/depression in person</label>
+        <locationX>1018</locationX>
+        <locationY>719</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_1__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varAmount9</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_8__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varAmount9_1</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Updated week 8 and 9 for virtual</description>
+        <name>Update_weeks_anxiety_depression_virtual_sales</name>
+        <label>Update weeks - anxiety/depression virtual sales</label>
+        <locationX>754</locationX>
+        <locationY>719</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_9__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varAmount9_1</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_8__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varAmount9</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Updated weeks 12 and 13 for virtual</description>
+        <name>Update_weeks_bipolarity_in_person_sales</name>
+        <label>Update weeks - bipolarity in person sales</label>
+        <locationX>314</locationX>
+        <locationY>719</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_12__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varam12_1</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_13__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <numberValue>0.0</numberValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_1__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varAmount12</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Updated weeks 12 and 13 for virtual</description>
+        <name>Update_weeks_bipolarity_virtual_sales</name>
+        <label>Update weeks - bipolarity virtual sales</label>
+        <locationX>50</locationX>
+        <locationY>719</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_12__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varAmount12</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_13__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varam12_1</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Updated week 11 for virtual</description>
+        <name>Update_weeks_non_bipolarity_virtual_sales</name>
+        <label>Update weeks - non-bipolarity virtual sales</label>
+        <locationX>1458</locationX>
+        <locationY>719</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_11__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varAmount10_1</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Update week 1 and 10 for in person</description>
+        <name>Update_weeks_non_bipollarity_in_person_sales</name>
+        <label>Update weeks non-bipollarity in person sales</label>
+        <locationX>1722</locationX>
+        <locationY>719</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_1__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varAmount10</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Amount_Week_10__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varAmount10_1</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
     <decisions>
-        <name>Check_Opportunity_Record_Type</name>
-        <label>Check Opportunity Record Type</label>
-        <locationX>1238</locationX>
-        <locationY>395</locationY>
-        <defaultConnector>
-            <targetReference>Opportunity_Amount_Available</targetReference>
-        </defaultConnector>
+        <description>Virtual or in person for non bipolarity sales workshop?</description>
+        <name>Anxiety_depression_workshop_type</name>
+        <label>Anxiety/depression workshop type?</label>
+        <locationX>1018</locationX>
+        <locationY>611</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
-            <name>Inscription_Atelier</name>
+            <name>Virtual_anxiety_depression</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <leftValueReference>$Record.Atelier_Reservation__r.Type__c</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
-                    <stringValue>SalesWorkshop</stringValue>
+                    <stringValue>Atelier d’autogestion virtuel</stringValue>
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Copy_1_of_Opportunity_Amount_Available</targetReference>
+                <targetReference>Update_weeks_anxiety_depression_virtual_sales</targetReference>
             </connector>
-            <label>Inscription Atelier</label>
+            <label>Virtual anxiety/depression</label>
+        </rules>
+        <rules>
+            <name>In_person_Anxiety_Depression</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Atelier_Reservation__r.Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Atelier d&apos;autogestion en présentiel</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_weeks_anxiety_depression_in_person</targetReference>
+            </connector>
+            <label>In-person Anxiety/Depression</label>
         </rules>
     </decisions>
     <decisions>
-        <name>Copy_1_of_Opportunity_Amount_Available</name>
-        <label>Copy 1 of Opportunity Amount Available?</label>
-        <locationX>578</locationX>
-        <locationY>503</locationY>
+        <description>Virtual or in person for bipolarity sales workshop?</description>
+        <name>Bipolarity_sales_workshop_type</name>
+        <label>Bipolarity sales workshop type?</label>
+        <locationX>314</locationX>
+        <locationY>611</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
-            <name>Copy_1_of_Bipolarite_Virtuel</name>
-            <conditionLogic>(1 OR 3) AND 2</conditionLogic>
-            <conditions>
-                <leftValueReference>$Record.Atelier_Reservation__r.WorkshopTheme__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>Bipolarité</stringValue>
-                </rightValue>
-            </conditions>
+            <name>Virtual_bipolarity_sales</name>
+            <conditionLogic>and</conditionLogic>
             <conditions>
                 <leftValueReference>$Record.Atelier_Reservation__r.Type__c</leftValueReference>
                 <operator>EqualTo</operator>
@@ -50,28 +456,14 @@
                     <stringValue>Atelier d’autogestion virtuel</stringValue>
                 </rightValue>
             </conditions>
-            <conditions>
-                <leftValueReference>$Record.Atelier_Reservation__r.WorkshopTheme__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>Bipolarity (anglais)</stringValue>
-                </rightValue>
-            </conditions>
             <connector>
-                <targetReference>Copy_1_of_Update_Amount_Fields_Bipolarite_Virtuel</targetReference>
+                <targetReference>Update_weeks_bipolarity_virtual_sales</targetReference>
             </connector>
-            <label>Copy 1 of Bipolarite Virtuel</label>
+            <label>Virtual bipolarity sales</label>
         </rules>
         <rules>
-            <name>Copy_1_of_Bipolarite_Presentiel</name>
-            <conditionLogic>(1 OR 3) AND 2</conditionLogic>
-            <conditions>
-                <leftValueReference>$Record.Atelier_Reservation__r.WorkshopTheme__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>Bipolarité</stringValue>
-                </rightValue>
-            </conditions>
+            <name>In_person_bipolarity_sales</name>
+            <conditionLogic>and</conditionLogic>
             <conditions>
                 <leftValueReference>$Record.Atelier_Reservation__r.Type__c</leftValueReference>
                 <operator>EqualTo</operator>
@@ -79,201 +471,119 @@
                     <stringValue>Atelier d&apos;autogestion en présentiel</stringValue>
                 </rightValue>
             </conditions>
-            <conditions>
-                <leftValueReference>$Record.Atelier_Reservation__r.WorkshopTheme__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>Bipolarity (anglais)</stringValue>
-                </rightValue>
-            </conditions>
             <connector>
-                <targetReference>Copy_1_of_Update_Amount_Fields_Bipolarite_Presentiel</targetReference>
+                <targetReference>Update_weeks_bipolarity_in_person_sales</targetReference>
             </connector>
-            <label>Copy 1 of Bipolarite Presentiel</label>
-        </rules>
-        <rules>
-            <name>Copy_1_of_Non_Bipolarite_Virtuel</name>
-            <conditionLogic>(1 OR 3) AND 2</conditionLogic>
-            <conditions>
-                <leftValueReference>$Record.Atelier_Reservation__r.WorkshopTheme__c</leftValueReference>
-                <operator>NotEqualTo</operator>
-                <rightValue>
-                    <stringValue>Bipolarité</stringValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>$Record.Atelier_Reservation__r.Type__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>Atelier d’autogestion virtuel</stringValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>$Record.Atelier_Reservation__r.WorkshopTheme__c</leftValueReference>
-                <operator>NotEqualTo</operator>
-                <rightValue>
-                    <stringValue>Bipolarity (anglais)</stringValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Copy_1_of_Update_Amount_Fields_Non_Bipolarite_Virtuel</targetReference>
-            </connector>
-            <label>Copy 1 of Non Bipolarite Virtuel</label>
-        </rules>
-        <rules>
-            <name>Copy_1_of_Non_Bipolarite_Presentiel</name>
-            <conditionLogic>(1 OR 3) AND 2</conditionLogic>
-            <conditions>
-                <leftValueReference>$Record.Atelier_Reservation__r.WorkshopTheme__c</leftValueReference>
-                <operator>NotEqualTo</operator>
-                <rightValue>
-                    <stringValue>Bipolarité</stringValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>$Record.Atelier_Reservation__r.Type__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>Atelier d&apos;autogestion en présentiel</stringValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>$Record.Atelier_Reservation__r.WorkshopTheme__c</leftValueReference>
-                <operator>NotEqualTo</operator>
-                <rightValue>
-                    <stringValue>Bipolarity (anglais)</stringValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Copy_1_of_Update_Amount_Fields_Non_Bipolarite_Presentiel</targetReference>
-            </connector>
-            <label>Copy 1 of Non Bipolarite Presentiel</label>
+            <label>In person bipolarity sales</label>
         </rules>
     </decisions>
     <decisions>
-        <name>Opportunity_Amount_Available</name>
-        <label>Opportunity Amount Available?</label>
-        <locationX>1898</locationX>
-        <locationY>503</locationY>
+        <description>Virtual or in person for non bipolarity sales workshop?</description>
+        <name>Non_bipolarity_sales_workshop_type</name>
+        <label>Non-bipolarity sales workshop type?</label>
+        <locationX>1722</locationX>
+        <locationY>611</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
-            <name>Bipolarite_Virtuel</name>
-            <conditionLogic>(1 OR 3) AND 2</conditionLogic>
+            <name>Virtual_non_bipolarity_sales</name>
+            <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>$Record.Atelier_Groupe__r.WorkshopTheme__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>Bipolarité</stringValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>$Record.Atelier_Groupe__r.Type__c</leftValueReference>
+                <leftValueReference>$Record.Atelier_Reservation__r.Type__c</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
                     <stringValue>Atelier d’autogestion virtuel</stringValue>
                 </rightValue>
             </conditions>
-            <conditions>
-                <leftValueReference>$Record.Atelier_Groupe__r.WorkshopTheme__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>Bipolarity (anglais)</stringValue>
-                </rightValue>
-            </conditions>
             <connector>
-                <targetReference>Update_Amount_Fields_Bipolarite_Virtuel</targetReference>
+                <targetReference>Update_weeks_non_bipolarity_virtual_sales</targetReference>
             </connector>
-            <label>Bipolarite Virtuel</label>
+            <label>Virtual non-bipolarity sales</label>
         </rules>
         <rules>
-            <name>Bipolarite_Presentiel</name>
-            <conditionLogic>(1 OR 3) AND 2</conditionLogic>
+            <name>In_person_non_bipolarity_sales</name>
+            <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>$Record.Atelier_Groupe__r.WorkshopTheme__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>Bipolarité</stringValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>$Record.Atelier_Groupe__r.Type__c</leftValueReference>
+                <leftValueReference>$Record.Atelier_Reservation__r.Type__c</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
                     <stringValue>Atelier d&apos;autogestion en présentiel</stringValue>
                 </rightValue>
             </conditions>
-            <conditions>
-                <leftValueReference>$Record.Atelier_Groupe__r.WorkshopTheme__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>Bipolarity (anglais)</stringValue>
-                </rightValue>
-            </conditions>
             <connector>
-                <targetReference>Update_Amount_Fields_Bipolarite_Presentiel</targetReference>
+                <targetReference>Update_weeks_non_bipollarity_in_person_sales</targetReference>
             </connector>
-            <label>Bipolarite Presentiel</label>
-        </rules>
-        <rules>
-            <name>Non_Bipolarite_Virtuel</name>
-            <conditionLogic>(1 OR 3) AND 2</conditionLogic>
-            <conditions>
-                <leftValueReference>$Record.Atelier_Groupe__r.WorkshopTheme__c</leftValueReference>
-                <operator>NotEqualTo</operator>
-                <rightValue>
-                    <stringValue>Bipolarité</stringValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>$Record.Atelier_Groupe__r.Type__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>Atelier d’autogestion virtuel</stringValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>$Record.Atelier_Groupe__r.WorkshopTheme__c</leftValueReference>
-                <operator>NotEqualTo</operator>
-                <rightValue>
-                    <stringValue>Bipolarity (anglais)</stringValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Update_Amount_Fields_Non_Bipolarite_Virtuel</targetReference>
-            </connector>
-            <label>Non Bipolarite Virtuel</label>
-        </rules>
-        <rules>
-            <name>Non_Bipolarite_Presentiel</name>
-            <conditionLogic>(1 OR 3) AND 2</conditionLogic>
-            <conditions>
-                <leftValueReference>$Record.Atelier_Groupe__r.WorkshopTheme__c</leftValueReference>
-                <operator>NotEqualTo</operator>
-                <rightValue>
-                    <stringValue>Bipolarité</stringValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>$Record.Atelier_Groupe__r.Type__c</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>Atelier d&apos;autogestion en présentiel</stringValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>$Record.Atelier_Groupe__r.WorkshopTheme__c</leftValueReference>
-                <operator>NotEqualTo</operator>
-                <rightValue>
-                    <stringValue>Bipolarity (anglais)</stringValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Update_Amount_Fields_Non_Bipolarite_Presentiel</targetReference>
-            </connector>
-            <label>Non Bipolarite Presentiel</label>
+            <label>In-person non bipolarity sales</label>
         </rules>
     </decisions>
-    <description>Split Inscription Atelier</description>
+    <decisions>
+        <name>Thematique_Sales_Workshop</name>
+        <label>Thematique - Sales Workshop</label>
+        <locationX>1018</locationX>
+        <locationY>395</locationY>
+        <defaultConnector>
+            <targetReference>Set_Base_values_non_bipolar</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Other workshop</defaultConnectorLabel>
+        <rules>
+            <name>Bipolarite_Salesworkshop</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Atelier_Reservation__r.WorkshopTheme__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Bipolarité</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Atelier_Reservation__r.WorkshopTheme__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Bipolarity (anglais)</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_base_values_bipolarity_sales_workshop</targetReference>
+            </connector>
+            <label>Bipolarite Salesworkshop</label>
+        </rules>
+        <rules>
+            <name>Aniety_Depression</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Atelier_Reservation__r.WorkshopTheme__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Anxiété - cégep</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Atelier_Reservation__r.WorkshopTheme__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Anxiety - university</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Atelier_Reservation__r.WorkshopTheme__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Dépression - cégep</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Atelier_Reservation__r.WorkshopTheme__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Anxiété - université</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Base_values_Anxiety_depression</targetReference>
+            </connector>
+            <label>Aniety/Depression</label>
+        </rules>
+    </decisions>
+    <description>Impact Exchange - Adding Anxiety/depression workshops</description>
     <environments>Default</environments>
     <formulas>
         <name>IsNewOpportunity</name>
@@ -310,6 +620,18 @@
         <expression>{!transaction.ChargentOrders__Amount__c}/13</expression>
         <scale>2</scale>
     </formulas>
+    <formulas>
+        <name>varAmount9</name>
+        <dataType>Currency</dataType>
+        <expression>{!transaction.ChargentOrders__Amount__c}/9</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>varAmount9_1</name>
+        <dataType>Currency</dataType>
+        <expression>{!transaction.ChargentOrders__Amount__c}-{!varAmount10}*8</expression>
+        <scale>2</scale>
+    </formulas>
     <interviewLabel>Opportunity Calculate Workshop Amount {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Opportunity Calculate Workshop Amount</label>
     <processMetadataValues>
@@ -334,11 +656,11 @@
     <recordLookups>
         <name>transaction</name>
         <label>transaction</label>
-        <locationX>1238</locationX>
+        <locationX>1018</locationX>
         <locationY>287</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>Check_Opportunity_Record_Type</targetReference>
+            <targetReference>Thematique_Sales_Workshop</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -366,652 +688,8 @@
         <object>ChargentOrders__Transaction__c</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
-    <recordUpdates>
-        <name>Copy_1_of_Update_Amount_Fields_Bipolarite_Presentiel</name>
-        <label>Copy 1 of Update Amount Fields (Bipolarite Presentiel)</label>
-        <locationX>314</locationX>
-        <locationY>611</locationY>
-        <inputAssignments>
-            <field>Amount_Week_10__c</field>
-            <value>
-                <elementReference>varAmount12</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_11__c</field>
-            <value>
-                <elementReference>varAmount12</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_12__c</field>
-            <value>
-                <elementReference>varam12_1</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_13__c</field>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_1__c</field>
-            <value>
-                <elementReference>varAmount12</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_2__c</field>
-            <value>
-                <elementReference>varAmount12</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_3__c</field>
-            <value>
-                <elementReference>varAmount12</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_4__c</field>
-            <value>
-                <elementReference>varAmount12</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_5__c</field>
-            <value>
-                <elementReference>varAmount12</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_6__c</field>
-            <value>
-                <elementReference>varAmount12</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_7__c</field>
-            <value>
-                <elementReference>varAmount12</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_8__c</field>
-            <value>
-                <elementReference>varAmount12</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_9__c</field>
-            <value>
-                <elementReference>varAmount12</elementReference>
-            </value>
-        </inputAssignments>
-        <inputReference>$Record</inputReference>
-    </recordUpdates>
-    <recordUpdates>
-        <name>Copy_1_of_Update_Amount_Fields_Bipolarite_Virtuel</name>
-        <label>Copy 1 of Update Amount Fields (Bipolarite Virtuel)</label>
-        <locationX>50</locationX>
-        <locationY>611</locationY>
-        <inputAssignments>
-            <field>Amount_Week_10__c</field>
-            <value>
-                <elementReference>varAmount12</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_11__c</field>
-            <value>
-                <elementReference>varAmount12</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_12__c</field>
-            <value>
-                <elementReference>varAmount12</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_13__c</field>
-            <value>
-                <elementReference>varam12_1</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_1__c</field>
-            <value>
-                <numberValue>0.0</numberValue>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_2__c</field>
-            <value>
-                <elementReference>varAmount12</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_3__c</field>
-            <value>
-                <elementReference>varAmount12</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_4__c</field>
-            <value>
-                <elementReference>varAmount12</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_5__c</field>
-            <value>
-                <elementReference>varAmount12</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_6__c</field>
-            <value>
-                <elementReference>varAmount12</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_7__c</field>
-            <value>
-                <elementReference>varAmount12</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_8__c</field>
-            <value>
-                <elementReference>varAmount12</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_9__c</field>
-            <value>
-                <elementReference>varAmount12</elementReference>
-            </value>
-        </inputAssignments>
-        <inputReference>$Record</inputReference>
-    </recordUpdates>
-    <recordUpdates>
-        <name>Copy_1_of_Update_Amount_Fields_Non_Bipolarite_Presentiel</name>
-        <label>Copy 1 of Update Amount Fields (Non Bipolarite Presentiel)</label>
-        <locationX>842</locationX>
-        <locationY>611</locationY>
-        <inputAssignments>
-            <field>Amount_Week_10__c</field>
-            <value>
-                <elementReference>varAmount10_1</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_11__c</field>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_12__c</field>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_13__c</field>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_1__c</field>
-            <value>
-                <elementReference>varAmount10</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_2__c</field>
-            <value>
-                <elementReference>varAmount10</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_3__c</field>
-            <value>
-                <elementReference>varAmount10</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_4__c</field>
-            <value>
-                <elementReference>varAmount10</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_5__c</field>
-            <value>
-                <elementReference>varAmount10</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_6__c</field>
-            <value>
-                <elementReference>varAmount10</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_7__c</field>
-            <value>
-                <elementReference>varAmount10</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_8__c</field>
-            <value>
-                <elementReference>varAmount10</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_9__c</field>
-            <value>
-                <elementReference>varAmount10</elementReference>
-            </value>
-        </inputAssignments>
-        <inputReference>$Record</inputReference>
-    </recordUpdates>
-    <recordUpdates>
-        <name>Copy_1_of_Update_Amount_Fields_Non_Bipolarite_Virtuel</name>
-        <label>Copy 1 of Update Amount Fields (Non Bipolarite Virtuel)</label>
-        <locationX>578</locationX>
-        <locationY>611</locationY>
-        <inputAssignments>
-            <field>Amount_Week_10__c</field>
-            <value>
-                <elementReference>varAmount10</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_11__c</field>
-            <value>
-                <elementReference>varAmount10_1</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_12__c</field>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_13__c</field>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_1__c</field>
-            <value>
-                <numberValue>0.0</numberValue>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_2__c</field>
-            <value>
-                <elementReference>varAmount10</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_3__c</field>
-            <value>
-                <elementReference>varAmount10</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_4__c</field>
-            <value>
-                <elementReference>varAmount10</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_5__c</field>
-            <value>
-                <elementReference>varAmount10</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_6__c</field>
-            <value>
-                <elementReference>varAmount10</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_7__c</field>
-            <value>
-                <elementReference>varAmount10</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_8__c</field>
-            <value>
-                <elementReference>varAmount10</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_9__c</field>
-            <value>
-                <elementReference>varAmount10</elementReference>
-            </value>
-        </inputAssignments>
-        <inputReference>$Record</inputReference>
-    </recordUpdates>
-    <recordUpdates>
-        <name>Update_Amount_Fields_Bipolarite_Presentiel</name>
-        <label>Update Amount Fields (Bipolarite Presentiel)</label>
-        <locationX>1634</locationX>
-        <locationY>611</locationY>
-        <inputAssignments>
-            <field>Amount_Week_10__c</field>
-            <value>
-                <elementReference>varAmount12</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_11__c</field>
-            <value>
-                <elementReference>varAmount12</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_12__c</field>
-            <value>
-                <elementReference>varam12_1</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_13__c</field>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_1__c</field>
-            <value>
-                <elementReference>varAmount12</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_2__c</field>
-            <value>
-                <elementReference>varAmount12</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_3__c</field>
-            <value>
-                <elementReference>varAmount12</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_4__c</field>
-            <value>
-                <elementReference>varAmount12</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_5__c</field>
-            <value>
-                <elementReference>varAmount12</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_6__c</field>
-            <value>
-                <elementReference>varAmount12</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_7__c</field>
-            <value>
-                <elementReference>varAmount12</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_8__c</field>
-            <value>
-                <elementReference>varAmount12</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_9__c</field>
-            <value>
-                <elementReference>varAmount12</elementReference>
-            </value>
-        </inputAssignments>
-        <inputReference>$Record</inputReference>
-    </recordUpdates>
-    <recordUpdates>
-        <name>Update_Amount_Fields_Bipolarite_Virtuel</name>
-        <label>Update Amount Fields (Bipolarite Virtuel)</label>
-        <locationX>1370</locationX>
-        <locationY>611</locationY>
-        <inputAssignments>
-            <field>Amount_Week_10__c</field>
-            <value>
-                <elementReference>varAmount12</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_11__c</field>
-            <value>
-                <elementReference>varAmount12</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_12__c</field>
-            <value>
-                <elementReference>varAmount12</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_13__c</field>
-            <value>
-                <elementReference>varam12_1</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_1__c</field>
-            <value>
-                <numberValue>0.0</numberValue>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_2__c</field>
-            <value>
-                <elementReference>varAmount12</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_3__c</field>
-            <value>
-                <elementReference>varAmount12</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_4__c</field>
-            <value>
-                <elementReference>varAmount12</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_5__c</field>
-            <value>
-                <elementReference>varAmount12</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_6__c</field>
-            <value>
-                <elementReference>varAmount12</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_7__c</field>
-            <value>
-                <elementReference>varAmount12</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_8__c</field>
-            <value>
-                <elementReference>varAmount12</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_9__c</field>
-            <value>
-                <elementReference>varAmount12</elementReference>
-            </value>
-        </inputAssignments>
-        <inputReference>$Record</inputReference>
-    </recordUpdates>
-    <recordUpdates>
-        <name>Update_Amount_Fields_Non_Bipolarite_Presentiel</name>
-        <label>Update Amount Fields (Non Bipolarite Presentiel)</label>
-        <locationX>2162</locationX>
-        <locationY>611</locationY>
-        <inputAssignments>
-            <field>Amount_Week_10__c</field>
-            <value>
-                <elementReference>varAmount10_1</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_11__c</field>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_12__c</field>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_13__c</field>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_1__c</field>
-            <value>
-                <elementReference>varAmount10</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_2__c</field>
-            <value>
-                <elementReference>varAmount10</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_3__c</field>
-            <value>
-                <elementReference>varAmount10</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_4__c</field>
-            <value>
-                <elementReference>varAmount10</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_5__c</field>
-            <value>
-                <elementReference>varAmount10</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_6__c</field>
-            <value>
-                <elementReference>varAmount10</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_7__c</field>
-            <value>
-                <elementReference>varAmount10</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_8__c</field>
-            <value>
-                <elementReference>varAmount10</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_9__c</field>
-            <value>
-                <elementReference>varAmount10</elementReference>
-            </value>
-        </inputAssignments>
-        <inputReference>$Record</inputReference>
-    </recordUpdates>
-    <recordUpdates>
-        <name>Update_Amount_Fields_Non_Bipolarite_Virtuel</name>
-        <label>Update Amount Fields (Non Bipolarite Virtuel)</label>
-        <locationX>1898</locationX>
-        <locationY>611</locationY>
-        <inputAssignments>
-            <field>Amount_Week_10__c</field>
-            <value>
-                <elementReference>varAmount10</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_11__c</field>
-            <value>
-                <elementReference>varAmount10_1</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_12__c</field>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_13__c</field>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_1__c</field>
-            <value>
-                <numberValue>0.0</numberValue>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_2__c</field>
-            <value>
-                <elementReference>varAmount10</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_3__c</field>
-            <value>
-                <elementReference>varAmount10</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_4__c</field>
-            <value>
-                <elementReference>varAmount10</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_5__c</field>
-            <value>
-                <elementReference>varAmount10</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_6__c</field>
-            <value>
-                <elementReference>varAmount10</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_7__c</field>
-            <value>
-                <elementReference>varAmount10</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_8__c</field>
-            <value>
-                <elementReference>varAmount10</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Amount_Week_9__c</field>
-            <value>
-                <elementReference>varAmount10</elementReference>
-            </value>
-        </inputAssignments>
-        <inputReference>$Record</inputReference>
-    </recordUpdates>
     <start>
-        <locationX>1112</locationX>
+        <locationX>892</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>transaction</targetReference>
