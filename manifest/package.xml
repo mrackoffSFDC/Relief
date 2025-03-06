@@ -9,9 +9,5 @@
 		<members>WorkshopTrigger</members>
 		<name>ApexTrigger</name>
 	</types>
-	<types>
-		<members>Opportunity_Calculate_Workshop_Amount</members>
-		<name>Flow</name>
-	</types>
 	<version>63.0</version>
 </Package>
