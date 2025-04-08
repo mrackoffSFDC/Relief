@@ -1,0 +1,100 @@
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title></title>                                                                                                                                                                                                                                                                                                                                                                                                
+	<style type="text/css">
+		.ReadMsgBody {width: 100%; background-color: #ffffff;}
+		.ExternalClass {width: 100%; background-color: #ffffff;}
+		body {width: 100%; background-color: #ffffff; margin:0; padding:0; -webkit-font-smoothing: antialiased;font-family: Helvetica, Sans-Serif}
+		table {border-collapse: collapse;}
+		@media only screen and (max-width: 640px)  {
+			body[yahoo] .deviceWidth {width:440px!important; padding:0 4px;}	
+			body[yahoo] .center {text-align: center!important;}	 
+		}
+		@media only screen and (max-width: 479px) {
+			body[yahoo] .deviceWidth {width:280px!important; padding:0 4px;}	
+			body[yahoo] .center {text-align: center!important;}	 
+		}
+	</style>
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" yahoo="fix" style="font-family: Helvetica, Sans-Serif;">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center">
+		<tr>
+			<td width="100%" valign="top" bgcolor="#ffffff" style="padding-top:10px">
+				<table width="580" border="0" cellpadding="0" cellspacing="0" align="center" class="deviceWidth">
+					<tr>
+						<td width="100%" bgcolor="#ffffff">
+							<table border="0" cellpadding="0" cellspacing="0" align="center" class="deviceWidth">
+								<tr>
+									<td class="center" style="text-align: center;">
+										<a href="https://relief.ca/" target="_blank"><img src="https://monrelief--c.documentforce.com/servlet/servlet.ImageServer?id=0153h000001NvHM&oid=00D3h000003yNW0&lastMod=1614094682000" alt="Relief" border="0" width="50%" /></a>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				<table width="580" border="0" cellpadding="0" cellspacing="0" align="center" class="deviceWidth" bgcolor="#FEFEFE">
+					<tr>
+						<td style="padding:5px 0">
+							<table align="left" width="98%" cellpadding="0" cellspacing="0" border="0" class="deviceWidth">
+								<tr>
+ <td style="font-size: 11px; color: #555555; text-align: right; Helvetica, Sans-Serif; line-height: normal; vertical-align: top; padding:1px 0 10px 5px">
+                  418, rue Sherbrooke Est, bureau 300 (3e étage)<br/>
+                  Montréal (Québec) H2L 1J6<br/>
+                  Téléphone: 1-855-768-7536<br/>
+                  <a href="https://www.relief.ca/">relief.ca</a><br/>
+                  </td>
+                </tr>
+                <tr>
+									<td style="font-size: 11px; color: #555555; font-weight: normal; text-align: left; font-family: Helvetica, Sans-Serif; line-height: normal; vertical-align: top; padding:1px 0 10px 5px">
+
+<u>Accompagnement individuel en autogestion</u><br>  
+Date d'émission: {!Contact.Today_Date__c}<br><br>
+
+<u>Service rendu à:</u><br>
+{!Opportunity.npsp__Primary_Contact__c}<br>
+{!Contact.MailingAddress}<br>
+{!Contact.Email}<br><br>
+
+<u>Bilan de démarche </u><br>
+<b>Date de la rencontre bilan</b>: {!Notes__c.Date_de_la_rencontre__c}br>
+<b>Statut de l'accompagnement</b>: {!IndividualSupport__c.Statut__c}<br>
+<b>Démarche complétée</b>{!Notes__c.Demarche_completee__c}<br>
+<b>Raison du désistement</b>{!Notes__c.Raison_d_sistement__c}<br>
+<br>
+Thématiques choisies: <br>
+{!Notes__c.Th_matiques_choisies_bilan__c}<br><br>
+Bons coups, fiertés et acquis: {!Notes__c.Bons_coups_les_fiert_s_et_les_acquis__c}<br>
+{!Notes__c.X2_Bons_coups_fiert_s_et_acquis__c}<br>
+{!Notes__c.X3_Bons_coups_fiert_s_et_acquis__c}<br><br>
+
+Objectif.s pour le futur: <br>
+{!Notes__c.X1_Objectif_pour_le_futur__c}<br>
+{!Notes__c.X2_Objectif_pour_le_futur__c}<br><br>
+
+Nom de l'intervenant responsable du dossier: {!Notes__c.OwnerFullName}<br>
+Courriel de l'intervenant responsable du dossier: {!Notes__c.OwnerEmail}<br><br>
+<p style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;line-height:normal;"><span style="font-size:11px;"><span style="font-family:Helvetica,Arial,Helvetica,sans-serif;">Les personnes sont accompagn&eacute;.es par un.e intervenant.e en sant&eacute; mentale de Relief pour (re)trouver une meilleure qualit&eacute; de vie et reprendre du pouvoir sur leur sant&eacute; mentale, &agrave; l&#39;aide de l&rsquo;&eacute;coute active et d&#39;outils d&#39;autogestion h&eacute;berg&eacute;s sur une plateforme num&eacute;rique.</span></span><br />
+&nbsp;</body>
+</html>
+
+<p style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;line-height:normal;"><span style="font-size:11px;"><span style="font-family:Helvetica,Arial,Helvetica,sans-serif;">Chaque personne peut choisir entre 16 th&eacute;matiques d&#39;autogestion pour une dur&eacute;e de 50 minutes par deux semaines, avec une relance de 20 minutes entre les rencontres. ll ne s&#39;agit pas d&#39;une psychoth&eacute;rapie et ne vise, en aucun cas, &agrave; la remplacer.&nbsp;</span></span><br />
+&nbsp;</p>
+
+<p style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;line-height:normal;"><span style="font-size:11px;"><span style="font-family:Helvetica,Arial,Helvetica,sans-serif;">Le processus de d&eacute;veloppement utilisant des bases scientifiques rigoureuses a &eacute;t&eacute; publi&eacute; dans une revue scientifique avec comit&eacute; de pairs: Sauv&eacute;, C., Mercuri, M., Coulombe, S., Beaudin, A., Villatte, A., Drouin, M-A., Provost, J-R. (sous presse). Exploration du r&ocirc;le, des bienfaits et des d&eacute;fis du co-design dans la cr&eacute;ation de services d&#39;accompagnement &agrave; l&#39;autogestion en sant&eacute; mentale au Qu&eacute;bec : une r&eacute;flexion appuy&eacute;e sur la litt&eacute;rature et un projet en cours.&nbsp;<em>Revue Sant&eacute; Mentale Qu&eacute;bec</em></span></span><br />
+&nbsp;</p>
+
+<p style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;line-height:normal;"><span style="font-size:11px;"><span style="font-family:Helvetica,Arial,Helvetica,sans-serif;">L&#39;intervention a &eacute;t&eacute; d&eacute;velopp&eacute;e dans le cadre d&#39;une recherche financ&eacute;e par un organisme subventionnaire gouvernemental ind&eacute;pendant, le Conseil de recherches en sciences humaines. La recherche &eacute;tait chapeaut&eacute;e par Simon Coulombe, PhD en psychologie, professeur agr&eacute;g&eacute;, titulaire de la Chaire de recherche Relief en sant&eacute; mentale, autogestion et travail (Universit&eacute; Laval), en collaboration avec des chercheurs et professionnels en psychologie (Marc-Simon Drouin, PhD, Universit&eacute; du Qu&eacute;bec &agrave; Montr&eacute;al) et psycho&eacute;ducation (Aude Villatte, Universit&eacute; du Qu&eacute;bec en Outaouais).<br /><br />
+
+<p style="margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;line-height:normal;"><span style="font-size:11px;"><span style="font-family:Helvetica,Arial,Helvetica,sans-serif;">Le contenu de l&#39;intervention s&#39;appuie sur le mat&eacute;riel d&#39;autogestion valid&eacute; par un comit&eacute; d&#39;expert.e.s interdisciplinaire.&nbsp;</span></span></p>
+
+<p style="margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;"><br />
+<span style="font-size:11px;"><span style="font-family:Helvetica,Arial,Helvetica,sans-serif;"><span style="margin-left:0px;margin-top:14px;width:225px;height:27px;"><img alt="Une image contenant écriture manuscrite, Police, calligraphie, texteDescription générée automatiquement" height="27" src="https://monrelief--partialdev.sandbox.file.force.com/servlet/servlet.ImageServer?id=015As000000vtPZ&oid=00DAs000000UtYX&lastMod=1694812617000" style="float: left;" width="225" /></span></span></span><br />
+
+<hr /><span style="font-size:11px;"><span style="font-family:Helvetica,Arial,Helvetica,sans-serif;">MICH&Egrave;LE LAMBIN&nbsp;<br />
+Travailleuse sociale, psychoth&eacute;rapeute, Clinicienne, formatrice et superviseure&nbsp;<br />
+Membre &eacute;m&eacute;rite de l&rsquo;OTSTCFQ&nbsp;<br />
+Reconnue par L&rsquo;OPQ&nbsp;<br />
+D&eacute;tentrice d&rsquo;une Certification internationale de superviseure de EMDRIA&nbsp;<br />
+N&ordm; de permis : LAMM9002090TS&nbsp;</span></span></p>
+</body>

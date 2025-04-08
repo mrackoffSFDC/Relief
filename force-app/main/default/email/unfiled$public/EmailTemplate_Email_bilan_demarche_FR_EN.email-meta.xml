@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Bilan démarche - FR_EN</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Courriel participant - Bilan démarche FR-EN</name>
+    <style>none</style>
+    <subject>Relief | Reçu de rencontre d&apos;accompagnement individuel en autogestion</subject>
+    <textOnly>418, rue Sherbrooke Est, bureau 300 (3e étage)
+Montréal (Québec) H2L 1J6
+Téléphone: 1-855-768-7536
+relief.ca
+Accompagnement individuel en autogestion
+Date d&apos;émission: {!Contact.Today_Date__c}
+
+Service rendu à:
+{!Opportunity.npsp__Primary_Contact__c}
+{!Contact.MailingAddress}
+{!Contact.Email}
+
+Bilan de démarche
+Date de la rencontre bilan: {!Notes__c.Date_de_la_rencontre__c}br&gt; Statut de l&apos;accompagnement: {!IndividualSupport__c.Statut__c}
+Démarche complétée{!Notes__c.Demarche_completee__c}
+Raison du désistement{!Notes__c.Raison_d_sistement__c}
+
+Thématiques choisies:
+{!Notes__c.Th_matiques_choisies_bilan__c}
+
+Bons coups, fiertés et acquis: {!Notes__c.Bons_coups_les_fiert_s_et_les_acquis__c}
+{!Notes__c.X2_Bons_coups_fiert_s_et_acquis__c}
+{!Notes__c.X3_Bons_coups_fiert_s_et_acquis__c}
+
+Objectif.s pour le futur:
+{!Notes__c.X1_Objectif_pour_le_futur__c}
+{!Notes__c.X2_Objectif_pour_le_futur__c}
+
+Nom de l&apos;intervenant responsable du dossier: {!Notes__c.OwnerFullName}
+Courriel de l&apos;intervenant responsable du dossier: {!Notes__c.OwnerEmail}
+
+Les personnes sont accompagné.es par un.e intervenant.e en santé mentale de Relief pour (re)trouver une meilleure qualité de vie et reprendre du pouvoir sur leur santé mentale, à l&apos;aide de l’écoute active et d&apos;outils d&apos;autogestion hébergés sur une plateforme numérique.
+
+Chaque personne peut choisir entre 16 thématiques d&apos;autogestion pour une durée de 50 minutes par deux semaines, avec une relance de 20 minutes entre les rencontres. ll ne s&apos;agit pas d&apos;une psychothérapie et ne vise, en aucun cas, à la remplacer.
+
+Le processus de développement utilisant des bases scientifiques rigoureuses a été publié dans une revue scientifique avec comité de pairs: Sauvé, C., Mercuri, M., Coulombe, S., Beaudin, A., Villatte, A., Drouin, M-A., Provost, J-R. (sous presse). Exploration du rôle, des bienfaits et des défis du co-design dans la création de services d&apos;accompagnement à l&apos;autogestion en santé mentale au Québec : une réflexion appuyée sur la littérature et un projet en cours. Revue Santé Mentale Québec
+
+L&apos;intervention a été développée dans le cadre d&apos;une recherche financée par un organisme subventionnaire gouvernemental indépendant, le Conseil de recherches en sciences humaines. La recherche était chapeautée par Simon Coulombe, PhD en psychologie, professeur agrégé, titulaire de la Chaire de recherche Relief en santé mentale, autogestion et travail (Université Laval), en collaboration avec des chercheurs et professionnels en psychologie (Marc-Simon Drouin, PhD, Université du Québec à Montréal) et psychoéducation (Aude Villatte, Université du Québec en Outaouais).
+
+Le contenu de l&apos;intervention s&apos;appuie sur le matériel d&apos;autogestion validé par un comité d&apos;expert.e.s interdisciplinaire.
+
+
+
+
+MICHÈLE LAMBIN
+Travailleuse sociale, psychothérapeute, Clinicienne, formatrice et superviseure
+Membre émérite de l’OTSTCFQ
+Reconnue par L’OPQ
+Détentrice d’une Certification internationale de superviseure de EMDRIA
+Nº de permis : LAMM9002090TS</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>
