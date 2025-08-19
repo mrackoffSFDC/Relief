@@ -7,7 +7,20 @@ public without sharing class PDFGenerationService {
         System.debug(JSON.serialize(objInput));
         // Create a new page reference
         System.debug('1');
-        PageReference templatePDF = new PageReference('/apex/GeneratePDFReceipt');
+    
+        //PageReference templatePDF = Page.GeneratePDFReceipt;
+       
+        PageReference templatePDF;
+        Id profileId = UserInfo.getProfileId();
+        String profileName = [Select Name from Profile where Id = :profileId].Name;
+        If(profileName == 'Payment Request Profile'){
+            Site s = [SELECT Id FROM Site WHERE name = 'Payment_Request' LIMIT 1];
+            SiteDetail sd = [Select id, secureUrl FROM SiteDetail WHERE durableId = : s.id LIMIT 1];        //PageReference templatePDF = new PageReference('/apex/GeneratePDFReceipt');
+            templatePDF = new PageReference(sd.secureUrl+ 'apex/GeneratePDFReceipt');
+        } else{
+            templatePDF = Page.GeneratePDFReceipt;
+        }
+
         // Set the account id as a parameter
         System.debug('2');
 
@@ -21,6 +34,8 @@ public without sharing class PDFGenerationService {
         templatePDF.getParameters().put('parentRecordId', objInput.parentRecordId);
         templatePDF.getParameters().put('templateName', objInput.templateName);
         templatePDF.getParameters().put('transactionId', objInput.transactionId);
+        templatePDF.getParameters().put('individualSupportId', objInput.individualSupportId);
+        templatePDF.getParameters().put('notesId', objInput.notesId);
         Blob templatePdfBlob;
         System.debug('4');
 
@@ -89,6 +104,10 @@ public without sharing class PDFGenerationService {
         public String chargentOrderId;
         @InvocableVariable
         public String transactionId;
+        @InvocableVariable
+        public String individualSupportId;
+        @InvocableVariable
+        public String notesId;
     }
     
     public static EmailTemplate getEmailTemplate(string name) {  

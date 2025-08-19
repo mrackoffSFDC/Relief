@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Notes Objectif X1</label>
+    <protected>false</protected>
+    <values>
+        <field>EmailTemplateName__c</field>
+        <value xsi:type="xsd:string">Courriel participant - Bilan démarche FR-EN</value>
+    </values>
+    <values>
+        <field>Leading_Character__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>MergeField__c</field>
+        <value xsi:type="xsd:string">{!Notes__c.X1_Objectif_pour_le_futur__c}</value>
+    </values>
+    <values>
+        <field>ValueField__c</field>
+        <value xsi:type="xsd:string">X1_Objectif_pour_le_futur__c</value>
+    </values>
+    <values>
+        <field>sObject__c</field>
+        <value xsi:type="xsd:string">Notes__c</value>
+    </values>
+</CustomMetadata>

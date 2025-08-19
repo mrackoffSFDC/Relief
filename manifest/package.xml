@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
 	<types>
-		<members>WorkshopManager</members>
-		<members>WorkshopManager_Test</members>
-		<name>ApexClass</name>
+		<members>PDF_Receipt_Configuration.Contact_Mailing_Address_Bilan_Demarche</members>
+		<members>PDF_Receipt_Configuration.Contact_Today_Date_Bilan_demarche</members>
+		<members>PDF_Receipt_Configuration.Notes_Bons_coups_les_fiert_s_et_les_acqu</members>
+		<members>PDF_Receipt_Configuration.Notes_Date_de_la_Recontre</members>
+		<members>PDF_Receipt_Configuration.Notes_Demarche_completee</members>
+		<members>PDF_Receipt_Configuration.Notes_Owner_Email</members>
+		<members>PDF_Receipt_Configuration.Notes_Owner_Full_name</members>
+		<members>PDF_Receipt_Configuration.Notes_Raison_d_sistement</members>
+		<members>PDF_Receipt_Configuration.Notes_Th_matiques_choisies_bilan</members>
+		<members>PDF_Receipt_Configuration.Notes_X1_Objectif_pour_le_futur</members>
+		<members>PDF_Receipt_Configuration.Notes_X2_Bons_coups_les_fiert_s_et_les</members>
+		<members>PDF_Receipt_Configuration.Notes_X2_Objectif_pour_le_futur</members>
+		<members>PDF_Receipt_Configuration.Notes_X3_Bons_coups_les_fiert_s_et_les</members>
+		<members>PDF_Receipt_Configuration.Opportunity_Primary_Contact_Bilan_demarc</members>
+		<name>CustomMetadata</name>
 	</types>
-	<types>
-		<members>WorkshopTrigger</members>
-		<name>ApexTrigger</name>
-	</types>
-	<types>
-		<members>Opportunity_Calculate_Workshop_Amount</members>
-		<name>Flow</name>
-	</types>
-	<version>63.0</version>
+	<version>64.0</version>
 </Package>
