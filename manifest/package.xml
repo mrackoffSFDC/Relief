@@ -25,5 +25,9 @@
 		<members>PDF_Receipt_Configuration.IndividualSupport_Statut</members>
 		<name>CustomMetadata</name>
 	</types>
+	<types>
+		<members>Notes_Clinique_Create_Email</members>
+		<name>Flow</name>
+	</types>
 	<version>64.0</version>
 </Package>

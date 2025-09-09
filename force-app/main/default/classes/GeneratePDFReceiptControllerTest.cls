@@ -117,8 +117,7 @@ public with sharing class GeneratePDFReceiptControllerTest {
         controller.transactionId = testTran.Id;
         controller.individualSupportId = testIndiv.Id;
         controller.notesId = testNote.Id;
-        controller.isTestRunni
-        ng = true;
+        controller.isTestRunning = true;
         Test.startTest();
             String returnString = controller.getEmailBody();
         Test.stopTest();

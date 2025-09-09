@@ -16,7 +16,7 @@
     </values>
     <values>
         <field>ValueField__c</field>
-        <value xsi:type="xsd:string">OwnerEmail</value>
+        <value xsi:type="xsd:string">Owner.Email</value>
     </values>
     <values>
         <field>sObject__c</field>
