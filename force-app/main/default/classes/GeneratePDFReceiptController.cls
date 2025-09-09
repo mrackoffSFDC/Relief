@@ -12,6 +12,7 @@ public class GeneratePDFReceiptController {
     public String notesId;
     public String individualSupportId;
 
+    public Boolean isTestRunning = false;
     
     public GeneratePDFReceiptController() {
         templateName = Apexpages.currentPage().getParameters().get('templateName');
@@ -228,17 +229,17 @@ public class GeneratePDFReceiptController {
             }
         }
 
-        if(individualSupportId != NULL && mapSObjectToMergeFieldValues.containsKey('InvididualSupport__c')) {
-            Map<String, String> mapMergeFieldValues = mapSObjectToMergeFieldValues.get('InvididualSupport__c');
-            Map<String, String> mergeFieldToLeadingCharacter = mapSObjectToLeadingCharacterValues.get('InvididualSupport__c');
+        if(individualSupportId != NULL && mapSObjectToMergeFieldValues.containsKey('IndividualSupport__c')) {
+            Map<String, String> mapMergeFieldValues = mapSObjectToMergeFieldValues.get('IndividualSupport__c');
+            Map<String, String> mergeFieldToLeadingCharacter = mapSObjectToLeadingCharacterValues.get('IndividualSupport__c');
 
             String queryFields = String.join(mapMergeFieldValues.values(), ', ');
-            String query = 'SELECT ' + queryFields + ' FROM InvididualSupport__c WHERE Id=\'' + notesId + '\' LIMIT 1';
+            String query = 'SELECT ' + queryFields + ' FROM IndividualSupport__c WHERE Id=\'' + individualSupportId + '\' LIMIT 1';
             System.debug(query);
-            InvididualSupport__c individualSupport = System.Database.query(query);
+            IndividualSupport__c individualSupport = System.Database.query(query);
             
             for(String mergeField : mapMergeFieldValues.keySet()) {
-                if (note.get(mapMergeFieldValues.get(mergeField)) == null) {
+                if (individualSupport.get(mapMergeFieldValues.get(mergeField)) == null) {
                     mapMergeFieldToFieldValue.put(mergeField, '');
                 } else {
                     String leadingCharacter = '';
@@ -261,7 +262,19 @@ public class GeneratePDFReceiptController {
             Notes__c note = System.Database.query(query);
             
             for(String mergeField : mapMergeFieldValues.keySet()) {
-                if (note.get(mapMergeFieldValues.get(mergeField)) == null) {
+                System.debug('current merge field = '+ mergeField);
+                String value;
+                if(mapMergeFieldValues.get(mergeField).contains('.')){
+                    System.debug(mapMergeFieldValues.get(mergeField));
+                    String objPath = mapMergeFieldValues.get(mergeField).split('\\.')[0];
+                    String fieldPath = mapMergeFieldValues.get(mergeField).split('\\.')[1];
+                    if (!isTestRunning){
+                        value = String.valueOf(note.getSobject(objPath).get(fieldPath));
+                    }
+                } else{
+                    value = String.valueOf(note.get(mapMergeFieldValues.get(mergeField)));
+                }
+                if (value == null) {
                     mapMergeFieldToFieldValue.put(mergeField, '');
                 } else {
                     String leadingCharacter = '';
@@ -269,11 +282,11 @@ public class GeneratePDFReceiptController {
                         leadingCharacter = mergeFieldToLeadingCharacter.get(mergeField);
                     }
     
-                    mapMergeFieldToFieldValue.put(mergeField, (leadingCharacter == null ? '' : leadingCharacter) + note.get(mapMergeFieldValues.get(mergeField)));
+                    mapMergeFieldToFieldValue.put(mergeField, (leadingCharacter == null ? '' : leadingCharacter) + value);
                 }
             }
         }
-        */
+        
         
         System.debug('==FINAL FIELD MAPPING===' + mapMergeFieldToFieldValue);
         System.debug('==Email Body===' + emailBody);

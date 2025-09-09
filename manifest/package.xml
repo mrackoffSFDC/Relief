@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
 	<types>
+		<members>GeneratePDFReceiptController</members>
+		<members>GeneratePDFReceiptControllerTest</members>
+		<members>PDFGenerationService</members>
+		<members>PDFGenerationServiceTest</members>/
+		<name>ApexClass</name>
+	</types>
+	<types>
 		<members>PDF_Receipt_Configuration.Contact_Mailing_Address_Bilan_Demarche</members>
 		<members>PDF_Receipt_Configuration.Contact_Today_Date_Bilan_demarche</members>
 		<members>PDF_Receipt_Configuration.Notes_Bons_coups_les_fiert_s_et_les_acqu</members>
@@ -15,6 +22,7 @@
 		<members>PDF_Receipt_Configuration.Notes_X2_Objectif_pour_le_futur</members>
 		<members>PDF_Receipt_Configuration.Notes_X3_Bons_coups_les_fiert_s_et_les</members>
 		<members>PDF_Receipt_Configuration.Opportunity_Primary_Contact_Bilan_demarc</members>
+		<members>PDF_Receipt_Configuration.IndividualSupport_Statut</members>
 		<name>CustomMetadata</name>
 	</types>
 	<version>64.0</version>

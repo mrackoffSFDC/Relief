@@ -63,14 +63,18 @@ public without sharing class PDFGenerationService {
         second = second.length() == 1 ? '0' + second : second;
 
         String strTime = year+'-'+month+'-'+day+' '+hour+':'+minute+':'+second ;
-        newContentVersion.Title = 'Receipt PDF' + strTime;
+        if( objInput.templateName == 'Courriel participant - Bilan démarche FR-EN' ){
+            newContentVersion.Title = 'Note Clinique Bilan d’autogestion' + strTime;
+        }else{
+            newContentVersion.Title = 'Receipt PDF' + strTime;
+        }
         System.debug('6');
         newContentVersion.PathOnClient = 'Receipt_' + strTime + '.pdf';
         newContentVersion.VersionData = templatePdfBlob;
         newContentVersion.FirstPublishLocationId = objInput.parentRecordId;
 
         insert newContentVersion;  
-        
+        system.debug('content version id = '+  newContentVersion.id);
         //Get the ContentDocument record for the inserted version
         Id contentDocumentId = [SELECT ContentDocumentId FROM ContentVersion WHERE Id = :newContentVersion.Id].ContentDocumentId;
 
@@ -82,6 +86,16 @@ public without sharing class PDFGenerationService {
             newContentDocLink.LinkedEntityId = objInput.parentRecordId;
             newContentDocLink.ContentDocumentId = contentDocumentId;
             insert newContentDocLink;
+        }
+        if(objInput.templateName == 'Courriel participant - Bilan démarche FR-EN' ){
+                // Create a new ContentDocumentLink
+            List<ContentDocumentLink> checkCDL2 = [SELECT id, LinkedEntityId, ContentDocumentId FROM ContentDocumentLink WHERE LinkedEntityId =:  objInput.contactId AND ContentDocumentId =:  contentDocumentId ];
+            if(checkCDL2.size() == 0 ){
+                ContentDocumentLink newContentDocLink = New ContentDocumentLink();
+                newContentDocLink.LinkedEntityId = objInput.contactId;
+                newContentDocLink.ContentDocumentId = contentDocumentId;
+                insert newContentDocLink;
+            }
         }
     }
     //input details that comes to apex from flow

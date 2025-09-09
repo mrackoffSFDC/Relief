@@ -34,7 +34,9 @@ public with sharing class GeneratePDFReceiptControllerTest {
         IndividualSupport__c support = new IndividualSupport__c();
         insert support;
 
-        Notes__c note = new Notes__c();
+        Notes__c note = new Notes__c(
+            Type_de_soutien__c = 'Soutien ponctuel par courriel'
+        );
         insert note;
 
         Meeting__c meeting = new Meeting__c(
@@ -52,7 +54,7 @@ public with sharing class GeneratePDFReceiptControllerTest {
         Formation__c testForm = [SELECT Id FROM Formation__c LIMIT 1];
         Opportunity testOpp = [SELECT Id FROM Opportunity LIMIT 1];
         ChargentOrders__Transaction__c testTran = [SELECT Id FROM ChargentOrders__Transaction__c LIMIT 1];
-        IndividualSupport__c testIs = [SELECT Id FROM IndividualSupport__c LIMIT 1];
+        IndividualSupport__c testIndiv = [SELECT Id FROM IndividualSupport__c LIMIT 1];
         Notes__c testNote = [SELECT Id FROM Notes__c LIMIT 1];
 
 
@@ -89,6 +91,34 @@ public with sharing class GeneratePDFReceiptControllerTest {
         controller.chargentOrderId = order.Id;
         controller.rencontreId = meeting.Id;
 
+        Test.startTest();
+            String returnString = controller.getEmailBody();
+        Test.stopTest();
+    }
+
+
+    @isTest
+    private static void GeneratePDFReceiptControllerTest_Bilan_demarche() {
+        Contact testCon = [SELECT Id FROM Contact LIMIT 1];
+        Formation__c testForm = [SELECT Id FROM Formation__c LIMIT 1];
+        Opportunity testOpp = [SELECT Id FROM Opportunity LIMIT 1];
+        ChargentOrders__Transaction__c testTran = [SELECT Id FROM ChargentOrders__Transaction__c LIMIT 1];
+        IndividualSupport__c testIndiv = [SELECT Id FROM IndividualSupport__c LIMIT 1];
+        Notes__c testNote = [SELECT Id FROM Notes__c LIMIT 1];
+
+
+
+        GeneratePDFReceiptController controller = new GeneratePDFReceiptController();
+        controller.templateName = 'Courriel participant - Bilan démarche FR-EN';
+        controller.parentRecordId = testCon.Id;
+        controller.opportunityId = testOpp.Id;
+        controller.contactId = testCon.Id;
+        controller.formationId = testForm.Id;
+        controller.transactionId = testTran.Id;
+        controller.individualSupportId = testIndiv.Id;
+        controller.notesId = testNote.Id;
+        controller.isTestRunni
+        ng = true;
         Test.startTest();
             String returnString = controller.getEmailBody();
         Test.stopTest();
